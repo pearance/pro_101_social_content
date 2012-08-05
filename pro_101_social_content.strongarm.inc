@@ -43,11 +43,11 @@ function pro_101_social_content_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'jasm_custom_02';
   $strongarm->value = array(
-    'inlist' => 0,
+    'inlist' => 1,
     'weight' => '5',
-    'name' => 'Custom',
+    'name' => 'Linkedin',
     'basepath' => '',
-    'href' => '',
+    'href' => 'www.linkedin.com/in/itaine',
   );
   $export['jasm_custom_02'] = $strongarm;
 
@@ -91,7 +91,7 @@ function pro_101_social_content_strongarm() {
     'weight' => '0',
     'name' => 'RSS',
     'basepath' => 'feeds.feedburner.com',
-    'href' => 'CerebraZA',
+    'href' => 'pro101a/feed',
     'override_widget' => 1,
     'custom_block_title' => 'Receive email updates',
   );
@@ -152,10 +152,10 @@ function pro_101_social_content_strongarm() {
   $strongarm->name = 'jasm_rss';
   $strongarm->value = array(
     'name' => 'RSS',
-    'inlist' => 1,
+    'inlist' => 0,
     'weight' => '0',
-    'basepath' => 'pro101a.platdev.info',
-    'href' => 'rss.xml',
+    'basepath' => '',
+    'href' => '',
   );
   $export['jasm_rss'] = $strongarm;
 
