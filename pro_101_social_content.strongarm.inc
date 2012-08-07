@@ -76,10 +76,10 @@ function pro_101_social_content_strongarm() {
     'href' => 'pro101demo',
     'fbid' => '',
     'colorscheme' => 'light',
-    'faces' => 0,
+    'faces' => 1,
     'border_color' => '',
-    'stream' => 0,
-    'header' => 1,
+    'stream' => '0',
+    'header' => 0,
   );
   $export['jasm_facebook'] = $strongarm;
 
@@ -93,8 +93,8 @@ function pro_101_social_content_strongarm() {
     'name' => 'RSS',
     'basepath' => 'feeds.feedburner.com',
     'href' => 'pro101a/feed',
-    'override_widget' => 1,
-    'custom_block_title' => 'Receive email updates',
+    'override_widget' => '1',
+    'custom_block_title' => 'Email Subscription',
   );
   $export['jasm_feedburner'] = $strongarm;
 
@@ -129,8 +129,8 @@ function pro_101_social_content_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'jasm_general';
   $strongarm->value = array(
-    'blockwidth' => 200,
-    'blockheight' => 100,
+    'blockwidth' => 220,
+    'blockheight' => 200,
   );
   $export['jasm_general'] = $strongarm;
 
@@ -170,22 +170,22 @@ function pro_101_social_content_strongarm() {
     'inlist' => 1,
     'weight' => '0',
     'href' => 'pro101demo',
-    'pref_pollresults' => 1,
-    'pref_scrollbar' => 0,
+    'pref_pollresults' => '1',
+    'pref_scrollbar' => '0',
     'pref_timed' => 'default',
-    'pref_loop' => 1,
+    'pref_loop' => '1',
     'pref_fluid_width' => 1,
     'pref_tweet_interval' => '6',
     'pref_tweet_number' => '4',
-    'pref_avatars' => 1,
-    'pref_timestamp' => 1,
-    'pref_hashtags' => 1,
+    'pref_avatars' => '1',
+    'pref_timestamp' => '1',
+    'pref_hashtags' => '1',
     'color_shellback' => '#333333',
     'color_shelltext' => '#ffffff',
     'color_tweetback' => '#000000',
     'color_tweettext' => '#ffffff',
     'color_link' => '#4aed05',
-    'but_show_count' => 1,
+    'but_show_count' => '1',
     'but_color_butcolor' => 'blue',
     'but_color_textcolor' => '',
     'but_color_linkcolor' => '',
