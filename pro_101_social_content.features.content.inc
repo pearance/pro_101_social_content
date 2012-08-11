@@ -10,6 +10,45 @@
 function pro_101_social_content_content_defaults() {
   $content = array();
 
+  $content['rss_count'] = (object) array(
+    'exported_path' => 'rss-count',
+    'title' => 'RSS Count',
+    'status' => '1',
+    'promote' => '0',
+    'sticky' => '0',
+    'type' => 'block',
+    'language' => 'und',
+    'created' => '1344725650',
+    'comment' => '0',
+    'translate' => '0',
+    'machine_name' => 'rss_count',
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'value' => '<?php
+
+$username = \'pro101a/feed\';
+
+
+
+
+
+$api_page = \'https://feedburner.google.com/api/awareness/1.0/GetFeedData?uri=\' . $username;
+$xml = file_get_contents ( $api_page );
+$profile = new SimpleXmlElement($xml, LIBXML_NOCDATA);
+$rsscount = (string) $profile->feed->entry[\'circulation\'];
+ 
+
+print($rsscount);
+
+?>',
+          'summary' => '',
+          'format' => 'php_code',
+        ),
+      ),
+    ),
+  );
+
   $content['social_welcome'] = (object) array(
     'exported_path' => 'social-welcome',
     'title' => 'Social Welcome',
