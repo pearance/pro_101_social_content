@@ -15,6 +15,7 @@ function pro_101_social_content_user_default_permissions() {
     'name' => 'configure social block attributes',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'jasm',
   );
