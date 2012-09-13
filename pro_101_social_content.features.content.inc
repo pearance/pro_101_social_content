@@ -27,13 +27,30 @@ function pro_101_social_content_content_defaults() {
         0 => array(
           'value' => '<?php
 
-$username = \'pro101a/feed\';
+
+
+// ENSURE THE PATH IS SURROUNDED BY SINGLE QUOTES & ENDS WITH A SEMI-COLON.
+
+$feed_url = \'PUT THIS SITE\'S FEED-BURNER URL HERE\';
 
 
 
 
 
-$api_page = \'https://feedburner.google.com/api/awareness/1.0/GetFeedData?uri=\' . $username;
+
+
+
+
+
+
+
+
+
+
+
+
+
+$api_page = \'https://feedburner.google.com/api/awareness/1.0/GetFeedData?uri=\' . $feed_url;
 $xml = file_get_contents ( $api_page );
 $profile = new SimpleXmlElement($xml, LIBXML_NOCDATA);
 $rsscount = (string) $profile->feed->entry[\'circulation\'];
