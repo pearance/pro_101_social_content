@@ -11,7 +11,7 @@ function pro_101_social_content_content_defaults() {
   $content = array();
 
   $content['rss_count'] = (object) array(
-    'exported_path' => 'rss-count',
+    'exported_path' => 'block/rss-count',
     'title' => 'RSS Count',
     'status' => '1',
     'promote' => '0',
@@ -67,7 +67,7 @@ print($rsscount);
   );
 
   $content['social_welcome'] = (object) array(
-    'exported_path' => 'social-welcome',
+    'exported_path' => 'block/social-welcome',
     'title' => 'Social Welcome',
     'status' => '1',
     'promote' => '0',
