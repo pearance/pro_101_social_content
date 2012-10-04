@@ -10,62 +10,6 @@
 function pro_101_social_content_content_defaults() {
   $content = array();
 
-  $content['rss_count'] = (object) array(
-    'exported_path' => 'block/rss-count',
-    'title' => 'RSS Count',
-    'status' => '1',
-    'promote' => '0',
-    'sticky' => '0',
-    'type' => 'block',
-    'language' => 'und',
-    'created' => '1344725650',
-    'comment' => '0',
-    'translate' => '0',
-    'machine_name' => 'rss_count',
-    'body' => array(
-      'und' => array(
-        0 => array(
-          'value' => '<?php
-
-
-
-// ENSURE THE PATH IS SURROUNDED BY SINGLE QUOTES & ENDS WITH A SEMI-COLON.
-
-$feed_url = \'PUT THIS SITE\'S FEED-BURNER URL HERE\';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$api_page = \'https://feedburner.google.com/api/awareness/1.0/GetFeedData?uri=\' . $feed_url;
-$xml = file_get_contents ( $api_page );
-$profile = new SimpleXmlElement($xml, LIBXML_NOCDATA);
-$rsscount = (string) $profile->feed->entry[\'circulation\'];
- 
-
-print($rsscount);
-
-?>',
-          'summary' => '',
-          'format' => 'php_code',
-        ),
-      ),
-    ),
-  );
-
   $content['social_welcome'] = (object) array(
     'exported_path' => 'block/social-welcome',
     'title' => 'Social Welcome',
