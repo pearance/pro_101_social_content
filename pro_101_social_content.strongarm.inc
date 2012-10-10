@@ -76,7 +76,7 @@ function pro_101_social_content_strongarm() {
     'href' => 'pro101demo',
     'fbid' => '',
     'colorscheme' => 'light',
-    'faces' => 1,
+    'faces' => 0,
     'border_color' => '',
     'stream' => '0',
     'header' => 0,
@@ -129,8 +129,8 @@ function pro_101_social_content_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'jasm_general';
   $strongarm->value = array(
-    'blockwidth' => '220',
-    'blockheight' => '200',
+    'blockwidth' => 220,
+    'blockheight' => 200,
   );
   $export['jasm_general'] = $strongarm;
 
