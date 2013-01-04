@@ -210,9 +210,9 @@ function pro_101_social_content_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'jasm_twitter_search';
   $strongarm->value = array(
-    'search_query' => '"dui law" OR "divorce law" OR "custody law" OR "wills law" OR "criminal law" OR "Real Estate Law" lang:en',
-    'search_title' => 'The talk on the net',
-    'search_subject' => 'Trending In Law',
+    'search_query' => '"promotion" OR "marketing" OR "social media" OR "development" OR "professionals" OR "lawyers" lang:en',
+    'search_title' => 'Trending',
+    'search_subject' => '',
   );
   $export['jasm_twitter_search'] = $strongarm;
 

@@ -27,7 +27,8 @@ function pro_101_social_content_content_defaults() {
         0 => array(
           'value' => '<!-- AddThis Welcome BEGIN --><script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fef75b47c1d7b74"></script><script type=\'text/javascript\'>
 addthis.bar.initialize({\'default\':{"backgroundColor":"#000000","buttonColor":"#098DF4","textColor":"#FFFFFF","buttonTextColor":"#FFFFFF","hideAfter":20},rules:[{"name":"AnyOther","message":"If you enjoy this page, do us a favor:","action":{"type":"button","text":"Click Here","verb":"share","service":"preferred"}}]});
-</script><!-- AddThis Welcome END -->',
+</script><!-- AddThis Welcome END -->
+',
           'summary' => '',
           'format' => 'plain_text',
         ),
