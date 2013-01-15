@@ -94,7 +94,7 @@ function pro_101_social_content_strongarm() {
     'basepath' => 'feeds.feedburner.com',
     'href' => 'pro101a/feed',
     'override_widget' => '1',
-    'custom_block_title' => 'Email Subscription',
+    'custom_block_title' => '',
   );
   $export['jasm_feedburner'] = $strongarm;
 
@@ -129,6 +129,7 @@ function pro_101_social_content_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'jasm_general';
   $strongarm->value = array(
+    'custom_block_title2' => 'Stay In Touch!',
     'blockwidth' => '220',
     'blockheight' => '220',
   );
