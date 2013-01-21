@@ -129,7 +129,7 @@ function pro_101_social_content_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'jasm_general';
   $strongarm->value = array(
-    'custom_block_title2' => '',
+    'custom_block_title2' => 'Stay In Touch!',
     'blockwidth' => '220',
     'blockheight' => '220',
   );
